@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import Skills from './components/Skills';
 import Works from './components/Works';
+import Contact from './components/Contact';
 
 export default class App extends Component {
   constructor() {
@@ -20,6 +21,7 @@ export default class App extends Component {
         <About />
         <Skills />
         <Works />
+        <Contact/>
       </div>
     )
   }
