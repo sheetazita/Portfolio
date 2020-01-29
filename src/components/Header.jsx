@@ -7,11 +7,12 @@ export default function Header() {
       <nav>
       <div className="nav-gradient"></div>
         <ul id="menu">
-          <a href="nav"><li>Intro</li></a>
+          <a href="#top"><li>Intro</li></a>
           <a href="#about"><li>About</li></a>
           <a href="#skills"><li>Skills</li></a>
           <a href="#works"><li>Works</li></a>
           <a href="#contact"><li>Contact</li></a>
+          <a href="https://www.docdroid.net/pi4f1jK/zitazhangresume.pdf"><li>Resume</li></a>
         </ul>
 {/* ------------------------------------------------ */}
     {/* <div id="hamburger">

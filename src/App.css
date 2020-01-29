@@ -1,6 +1,6 @@
-/* * {
+* {
   scroll-behavior: smooth;
-} */
+}
 
 body{
   background: #1A1A1A;
@@ -32,7 +32,7 @@ body{
 #title{
   width: 100%;
   height: 70px;
-  margin-top: 1rem;
+  /* margin-top: -1rem; */
   /* border: 3px solid limegreen; */
   }
   
@@ -99,6 +99,7 @@ nav{
 #menu li{
 list-style-type: none;
 margin: 0 20px;
+font-size: 16px;
 }
 
 header a{
@@ -205,26 +206,41 @@ a{
   height: 50px;
   object-fit: cover;
   margin-top: 260px;
-  animation: arrow 2s 2s ease-out forwards;
-  -webkit-animation-mode: forwards;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s;
+  animation: 
+  bounce 0.8s linear infinite,
+  appear 1s linear forwards 5s;
   opacity: 0;
     /* border: 1px solid red; */
 }
 
-.greeting a .downArrow:hover{
-  padding-top: 5px;
-}
+
 /* .greeting a .downArrow:hover{
     animation: shift 1.5s infinite;
     cursor: pointer;
     opacity: 1;
 } */
 
-@keyframes arrow{
-  0%{opacity: 0;}
-  100% {opacity: 1;}
+@keyframes bounce {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /* @keyframes shift {
   0% {
@@ -373,6 +389,29 @@ height: 600px;
 margin-left: 60px;
 }
 
+.inDesign-icon{
+  max-width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin: 20px 25px;
+ } 
+
+ #inDesign{
+  /* border: 1px solid red; */
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin-left: 25px;
+ }
+ 
+ #inDesign-font{
+  margin-top: -12px;
+  font-style: 13px;
+  /* border: 1px solid blue; */
+ }
+ 
 /******************* WORKS *******************/
 #works{
   /* height: 480vh; */
@@ -608,6 +647,24 @@ textarea:hover{
   display: none;
 }
 
+#inDesign{
+margin-top: -15px;
+ margin-left: 25px;
+}
+
+.inDesign-icon{
+  max-width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin: 20px 25px;
+ } 
+ 
+ #inDesign-font{
+  margin-top: -27px;
+  font-size: 12px;
+  /* border: 1px solid blue; */
+ }
+
 }
 
 /************************************* MEDIA QUERY 375PX *********************************/
@@ -834,6 +891,7 @@ textarea:hover{
   font-size: 13px;
   position: relative;
   top: -20px;
+  text-align: center;
   /* border: 1px solid red; */
 }
 
@@ -846,12 +904,30 @@ textarea:hover{
   margin-left: 0px;
 }
 
-.section-two .development-icons i{
-  width: 15%;
-  height: 80px;
-  /* border: 1px solid pink; */
-  margin: 5px 25px;
-}
+  .section-two .development-icons i{
+    width: 15%;
+    height: 80px;
+    /* border: 1px solid pink; */
+    margin: 5px 25px;
+  }
+
+  #inDesign{
+    margin-top: -15px;
+    margin-left: 25px;
+    }
+  
+  .inDesign-icon{
+    max-width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 20px 25px;
+   } 
+   
+   #inDesign-font{
+     margin-top: -18px;
+    font-size: 12px;
+    /* border: 1px solid blue; */
+   }
 
 #works .border-line{
   margin: auto;

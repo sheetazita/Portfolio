@@ -1,4 +1,5 @@
 import React from 'react'
+import inDesign from '../images/inDesign.png'
 
 export default function Skills() {
   return (
@@ -37,6 +38,7 @@ export default function Skills() {
               <div className="development-icons">
               <i class="devicon-photoshop-plain"><br /><span>Photoshop</span></i>
               <i class="devicon-illustrator-plain"><br /><span>Illustrator</span></i>
+              <div id="inDesign"><img className="inDesign-icon" src={inDesign}/><br /><span id="inDesign-font">InDesign</span></div>
             </div>
           </div>
           </div>
